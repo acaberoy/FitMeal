@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1050" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#121838"/>
+    </linearGradient>
+    <linearGradient id="sysGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2555"/>
+      <stop offset="100%" style="stop-color:#0f1735"/>
+    </linearGradient>
+    <linearGradient id="ucGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2affca;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#1de9b6;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="ucPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b388ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#7c4dff;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="ucRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff5252;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#ff1744;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="ucBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#40c4ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00b0ff;stop-opacity:0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1050" fill="url(#bgGrad)"/>
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2050" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1400" height="1050" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="700" y="42" text-anchor="middle" fill="#2affca" font-size="26" font-weight="bold" filter="url(#glow)">FitMeal — Use Case Diagram</text>
+  <text x="700" y="64" text-anchor="middle" fill="#7a8bbf" font-size="13">AI-Powered Personalised Meal &amp; Fitness Planning Application</text>
+
+  <!-- System Boundary -->
+  <rect x="230" y="80" width="940" height="940" rx="24" fill="url(#sysGrad)" stroke="#2affca" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.85"/>
+  <text x="700" y="108" text-anchor="middle" fill="#2affca" font-size="15" font-weight="bold" letter-spacing="3">« SYSTEM : FitMeal »</text>
+
+  <!-- ============ ACTOR HELPERS ============ -->
+  <!-- Guest Actor (left) -->
+  <g transform="translate(105,195)">
+    <circle cx="0" cy="-18" r="12" fill="none" stroke="#7a8bbf" stroke-width="2"/>
+    <line x1="0" y1="-6" x2="0" y2="18" stroke="#7a8bbf" stroke-width="2"/>
+    <line x1="-14" y1="2" x2="14" y2="2" stroke="#7a8bbf" stroke-width="2"/>
+    <line x1="0" y1="18" x2="-10" y2="34" stroke="#7a8bbf" stroke-width="2"/>
+    <line x1="0" y1="18" x2="10" y2="34" stroke="#7a8bbf" stroke-width="2"/>
+    <text x="0" y="52" text-anchor="middle" fill="#cfd8ef" font-size="13" font-weight="bold">Guest</text>
+  </g>
+
+  <!-- Registered User Actor (left) -->
+  <g transform="translate(105,510)">
+    <circle cx="0" cy="-18" r="12" fill="none" stroke="#2affca" stroke-width="2"/>
+    <line x1="0" y1="-6" x2="0" y2="18" stroke="#2affca" stroke-width="2"/>
+    <line x1="-14" y1="2" x2="14" y2="2" stroke="#2affca" stroke-width="2"/>
+    <line x1="0" y1="18" x2="-10" y2="34" stroke="#2affca" stroke-width="2"/>
+    <line x1="0" y1="18" x2="10" y2="34" stroke="#2affca" stroke-width="2"/>
+    <text x="0" y="52" text-anchor="middle" fill="#2affca" font-size="13" font-weight="bold">Registered</text>
+    <text x="0" y="67" text-anchor="middle" fill="#2affca" font-size="13" font-weight="bold">User</text>
+  </g>
+
+  <!-- Premium User Actor (left-bottom) -->
+  <g transform="translate(105,800)">
+    <circle cx="0" cy="-18" r="12" fill="none" stroke="#b388ff" stroke-width="2"/>
+    <line x1="0" y1="-6" x2="0" y2="18" stroke="#b388ff" stroke-width="2"/>
+    <line x1="-14" y1="2" x2="14" y2="2" stroke="#b388ff" stroke-width="2"/>
+    <line x1="0" y1="18" x2="-10" y2="34" stroke="#b388ff" stroke-width="2"/>
+    <line x1="0" y1="18" x2="10" y2="34" stroke="#b388ff" stroke-width="2"/>
+    <text x="0" y="52" text-anchor="middle" fill="#b388ff" font-size="13" font-weight="bold">Premium</text>
+    <text x="0" y="67" text-anchor="middle" fill="#b388ff" font-size="13" font-weight="bold">User</text>
+  </g>
+
+  <!-- Admin Actor (right) -->
+  <g transform="translate(1295,340)">
+    <circle cx="0" cy="-18" r="12" fill="none" stroke="#ff5252" stroke-width="2"/>
+    <line x1="0" y1="-6" x2="0" y2="18" stroke="#ff5252" stroke-width="2"/>
+    <line x1="-14" y1="2" x2="14" y2="2" stroke="#ff5252" stroke-width="2"/>
+    <line x1="0" y1="18" x2="-10" y2="34" stroke="#ff5252" stroke-width="2"/>
+    <line x1="0" y1="18" x2="10" y2="34" stroke="#ff5252" stroke-width="2"/>
+    <text x="0" y="52" text-anchor="middle" fill="#ff5252" font-size="13" font-weight="bold">Admin</text>
+  </g>
+
+  <!-- AI System Actor (right-bottom) -->
+  <g transform="translate(1295,720)">
+    <rect x="-30" y="-30" width="60" height="50" rx="8" fill="#0f1735" stroke="#40c4ff" stroke-width="1.5"/>
+    <text x="0" y="-5" text-anchor="middle" fill="#40c4ff" font-size="11" font-weight="bold">«sys»</text>
+    <text x="0" y="10" text-anchor="middle" fill="#40c4ff" font-size="10">AI</text>
+    <text x="0" y="38" text-anchor="middle" fill="#40c4ff" font-size="13" font-weight="bold">AI Engine</text>
+  </g>
+
+  <!-- ========== USE CASE ELLIPSES ========== -->
+
+  <!-- GUEST USE CASES (top-left area) -->
+  <!-- UC1: View Onboarding -->
+  <ellipse cx="380" cy="155" rx="95" ry="28" fill="url(#ucGreen)" stroke="#7a8bbf" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="380" y="160" text-anchor="middle" fill="#cfd8ef" font-size="12">View Onboarding</text>
+
+  <!-- UC2: Register Account -->
+  <ellipse cx="380" cy="225" rx="95" ry="28" fill="url(#ucGreen)" stroke="#7a8bbf" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="380" y="230" text-anchor="middle" fill="#cfd8ef" font-size="12">Register Account</text>
+
+  <!-- UC3: Login -->
+  <ellipse cx="380" cy="295" rx="95" ry="28" fill="url(#ucGreen)" stroke="#7a8bbf" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="380" y="300" text-anchor="middle" fill="#cfd8ef" font-size="12">Login</text>
+
+  <!-- REGISTERED USER USE CASES (centre-left) -->
+  <!-- UC4: Setup / Edit Profile -->
+  <ellipse cx="420" cy="385" rx="105" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="390" text-anchor="middle" fill="#e0f7fa" font-size="12">Setup / Edit Profile</text>
+
+  <!-- UC5: View Home Dashboard -->
+  <ellipse cx="420" cy="450" rx="110" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="455" text-anchor="middle" fill="#e0f7fa" font-size="12">View Home Dashboard</text>
+
+  <!-- UC6: View / Complete Meals -->
+  <ellipse cx="420" cy="515" rx="110" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="520" text-anchor="middle" fill="#e0f7fa" font-size="12">View / Complete Meals</text>
+
+  <!-- UC7: View / Complete Workouts -->
+  <ellipse cx="420" cy="580" rx="120" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="585" text-anchor="middle" fill="#e0f7fa" font-size="12">View / Complete Workouts</text>
+
+  <!-- UC8: View Workout Details -->
+  <ellipse cx="660" cy="580" rx="108" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1" stroke-dasharray="5 3" filter="url(#shadow)"/>
+  <text x="660" y="585" text-anchor="middle" fill="#e0f7fa" font-size="12">View Workout Details</text>
+
+  <!-- UC9: Track Progress -->
+  <ellipse cx="420" cy="645" rx="100" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="650" text-anchor="middle" fill="#e0f7fa" font-size="12">Track Progress</text>
+
+  <!-- UC10: View Profile & Achievements -->
+  <ellipse cx="420" cy="710" rx="130" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="715" text-anchor="middle" fill="#e0f7fa" font-size="12">View Profile &amp; Achievements</text>
+
+  <!-- UC11: Subscribe to Premium -->
+  <ellipse cx="420" cy="775" rx="115" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="780" text-anchor="middle" fill="#e0f7fa" font-size="12">Subscribe to Premium</text>
+
+  <!-- UC12: Logout -->
+  <ellipse cx="420" cy="840" rx="80" ry="28" fill="url(#ucGreen)" stroke="#2affca" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="845" text-anchor="middle" fill="#e0f7fa" font-size="12">Logout</text>
+
+  <!-- PREMIUM USER USE CASES (centre-bottom) -->
+  <!-- UC13: Access AI Coach Chatbot -->
+  <ellipse cx="420" cy="920" rx="120" ry="28" fill="url(#ucPurple)" stroke="#b388ff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="420" y="925" text-anchor="middle" fill="#e8d5ff" font-size="12">Access AI Coach Chatbot</text>
+
+  <!-- UC14: View Macro Breakdowns -->
+  <ellipse cx="660" cy="920" rx="115" ry="28" fill="url(#ucPurple)" stroke="#b388ff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="660" y="925" text-anchor="middle" fill="#e8d5ff" font-size="12">View Macro Breakdowns</text>
+
+  <!-- UC15: Get Recovery Plans -->
+  <ellipse cx="880" cy="920" rx="108" ry="28" fill="url(#ucPurple)" stroke="#b388ff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="880" y="925" text-anchor="middle" fill="#e8d5ff" font-size="12">Get Recovery Plans</text>
+
+  <!-- ADMIN USE CASES (right area) -->
+  <!-- UC16: View Admin Dashboard -->
+  <ellipse cx="980" cy="170" rx="120" ry="28" fill="url(#ucRed)" stroke="#ff5252" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="980" y="175" text-anchor="middle" fill="#ffcdd2" font-size="12">View Admin Dashboard</text>
+
+  <!-- UC17: Manage Users (CRUD) -->
+  <ellipse cx="980" cy="240" rx="120" ry="28" fill="url(#ucRed)" stroke="#ff5252" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="980" y="245" text-anchor="middle" fill="#ffcdd2" font-size="12">Manage Users (CRUD)</text>
+
+  <!-- UC18: View Activity Logs -->
+  <ellipse cx="980" cy="310" rx="115" ry="28" fill="url(#ucRed)" stroke="#ff5252" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="980" y="315" text-anchor="middle" fill="#ffcdd2" font-size="12">View Activity Logs</text>
+
+  <!-- UC19: View Analytics & Reports -->
+  <ellipse cx="980" cy="380" rx="125" ry="28" fill="url(#ucRed)" stroke="#ff5252" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="980" y="385" text-anchor="middle" fill="#ffcdd2" font-size="12">View Analytics &amp; Reports</text>
+
+  <!-- UC20: System Settings -->
+  <ellipse cx="980" cy="450" rx="105" ry="28" fill="url(#ucRed)" stroke="#ff5252" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="980" y="455" text-anchor="middle" fill="#ffcdd2" font-size="12">System Settings</text>
+
+  <!-- UC21: Reset All Data -->
+  <ellipse cx="980" cy="520" rx="100" ry="28" fill="url(#ucRed)" stroke="#ff5252" stroke-width="1" stroke-dasharray="5 3" filter="url(#shadow)"/>
+  <text x="980" y="525" text-anchor="middle" fill="#ffcdd2" font-size="12">Reset All Data</text>
+
+  <!-- AI SYSTEM USE CASES (right-centre) -->
+  <!-- UC22: Generate Meal Plans -->
+  <ellipse cx="940" cy="660" rx="115" ry="28" fill="url(#ucBlue)" stroke="#40c4ff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="940" y="665" text-anchor="middle" fill="#b3e5fc" font-size="12">Generate Meal Plans</text>
+
+  <!-- UC23: Generate Workout Plans -->
+  <ellipse cx="940" cy="730" rx="120" ry="28" fill="url(#ucBlue)" stroke="#40c4ff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="940" y="735" text-anchor="middle" fill="#b3e5fc" font-size="12">Generate Workout Plans</text>
+
+  <!-- UC24: Provide AI Advice -->
+  <ellipse cx="940" cy="800" rx="108" ry="28" fill="url(#ucBlue)" stroke="#40c4ff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="940" y="805" text-anchor="middle" fill="#b3e5fc" font-size="12">Provide AI Advice</text>
+
+  <!-- ========== ASSOCIATION LINES ========== -->
+
+  <!-- Guest → UC1,2,3 -->
+  <line x1="125" y1="185" x2="285" y2="160" stroke="#7a8bbf" stroke-width="1.2"/>
+  <line x1="125" y1="200" x2="285" y2="225" stroke="#7a8bbf" stroke-width="1.2"/>
+  <line x1="125" y1="215" x2="285" y2="290" stroke="#7a8bbf" stroke-width="1.2"/>
+
+  <!-- Registered User → UC4-12 -->
+  <line x1="130" y1="480" x2="315" y2="390" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="490" x2="310" y2="450" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="500" x2="310" y2="515" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="510" x2="300" y2="575" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="520" x2="320" y2="645" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="530" x2="290" y2="705" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="540" x2="305" y2="775" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="545" x2="340" y2="840" stroke="#2affca" stroke-width="1" opacity="0.7"/>
+
+  <!-- Premium User → UC13,14,15 (and inherits from Reg User) -->
+  <line x1="130" y1="795" x2="300" y2="920" stroke="#b388ff" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="790" x2="545" y2="920" stroke="#b388ff" stroke-width="1" opacity="0.7"/>
+  <line x1="130" y1="785" x2="772" y2="920" stroke="#b388ff" stroke-width="1" opacity="0.7"/>
+
+  <!-- Generalization: Premium User → Registered User -->
+  <line x1="105" y1="770" x2="105" y2="580" stroke="#b388ff" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <polygon points="105,580 99,595 111,595" fill="#b388ff"/>
+  <text x="60" y="678" fill="#b388ff" font-size="10" transform="rotate(-90,60,678)">«extends»</text>
+
+  <!-- Admin → UC16-21 -->
+  <line x1="1270" y1="320" x2="1100" y2="175" stroke="#ff5252" stroke-width="1" opacity="0.7"/>
+  <line x1="1270" y1="330" x2="1100" y2="240" stroke="#ff5252" stroke-width="1" opacity="0.7"/>
+  <line x1="1270" y1="340" x2="1095" y2="310" stroke="#ff5252" stroke-width="1" opacity="0.7"/>
+  <line x1="1270" y1="350" x2="1105" y2="380" stroke="#ff5252" stroke-width="1" opacity="0.7"/>
+  <line x1="1270" y1="360" x2="1085" y2="450" stroke="#ff5252" stroke-width="1" opacity="0.7"/>
+  <line x1="1270" y1="370" x2="1080" y2="520" stroke="#ff5252" stroke-width="1" opacity="0.7"/>
+
+  <!-- AI System → UC22,23,24 -->
+  <line x1="1265" y1="710" x2="1060" y2="665" stroke="#40c4ff" stroke-width="1" opacity="0.7"/>
+  <line x1="1265" y1="720" x2="1060" y2="730" stroke="#40c4ff" stroke-width="1" opacity="0.7"/>
+  <line x1="1265" y1="730" x2="1048" y2="800" stroke="#40c4ff" stroke-width="1" opacity="0.7"/>
+
+  <!-- ========== <<include>> / <<extend>> RELATIONSHIPS ========== -->
+
+  <!-- UC7 --<<include>>--> UC8: View Workout Details -->
+  <line x1="540" y1="580" x2="552" y2="580" stroke="#2affca" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="555" y="570" fill="#2affca" font-size="9">«include»</text>
+
+  <!-- UC20 --<<include>>--> UC21: Reset All Data -->
+  <line x1="980" y1="478" x2="980" y2="492" stroke="#ff5252" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="995" y="500" fill="#ff8a80" font-size="9">«include»</text>
+
+  <!-- UC4 (Setup Profile) ..<<include>>..> UC22 (Generate Meal Plans) -->
+  <line x1="525" y1="385" x2="825" y2="655" stroke="#40c4ff" stroke-width="1" stroke-dasharray="5 3" opacity="0.5"/>
+  <text x="650" y="510" fill="#40c4ff" font-size="9" transform="rotate(24,650,510)">«include»</text>
+
+  <!-- UC4 (Setup Profile) ..<<include>>..> UC23 (Generate Workout Plans) -->
+  <line x1="525" y1="395" x2="820" y2="725" stroke="#40c4ff" stroke-width="1" stroke-dasharray="5 3" opacity="0.4"/>
+
+  <!-- UC11 (Subscribe) ..<<include>>..> UC22 (re-generates plans) -->
+  <line x1="535" y1="775" x2="825" y2="665" stroke="#40c4ff" stroke-width="1" stroke-dasharray="5 3" opacity="0.4"/>
+  <text x="700" y="705" fill="#40c4ff" font-size="9" transform="rotate(-18,700,705)">«include»</text>
+
+  <!-- UC13 (AI Chatbot) ..uses..> UC24 (Provide AI Advice) -->
+  <line x1="540" y1="915" x2="832" y2="805" stroke="#40c4ff" stroke-width="1" stroke-dasharray="5 3" opacity="0.5"/>
+  <text x="680" y="850" fill="#40c4ff" font-size="9" transform="rotate(-14,680,850)">«include»</text>
+
+  <!-- ========== LEGEND ========== -->
+  <rect x="260" y="975" width="880" height="50" rx="10" fill="#0d1230" stroke="#1a2555" stroke-width="1"/>
+  <circle cx="300" cy="1000" r="5" fill="#7a8bbf"/><text x="312" y="1005" fill="#7a8bbf" font-size="11">Guest</text>
+  <circle cx="400" cy="1000" r="5" fill="#2affca"/><text x="412" y="1005" fill="#2affca" font-size="11">Registered User</text>
+  <circle cx="550" cy="1000" r="5" fill="#b388ff"/><text x="562" y="1005" fill="#b388ff" font-size="11">Premium User</text>
+  <circle cx="690" cy="1000" r="5" fill="#ff5252"/><text x="702" y="1005" fill="#ff5252" font-size="11">Admin</text>
+  <circle cx="780" cy="1000" r="5" fill="#40c4ff"/><text x="792" y="1005" fill="#40c4ff" font-size="11">AI Engine</text>
+  <line x1="880" y1="1000" x2="920" y2="1000" stroke="#ccc" stroke-width="1"/><text x="928" y="1005" fill="#7a8bbf" font-size="11">Association</text>
+  <line x1="1010" y1="1000" x2="1050" y2="1000" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/><text x="1058" y="1005" fill="#7a8bbf" font-size="11">«include»</text>
+</svg>

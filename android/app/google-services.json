@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702175616724",
+    "project_id": "fitmeal-final",
+    "storage_bucket": "fitmeal-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702175616724:android:b39c667ac9b17063ff6541",
+        "android_client_info": {
+          "package_name": "com.example.fitmeal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTYGOtXc0b-A_v4lHyehYz9hiOLP7IEHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
